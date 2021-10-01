@@ -1,16 +1,17 @@
 #include<iostream>
+#include<math.h>
 using namespace std;
 int main(){
-	int n,m;
-	cin>>n>>m;
-	int i=2;
-	for(int j=n;j<=m;j++){
-		for(i=2;i<=j-1;i++){
-			if(j%i==0){
-				break;
-			}
+	int num;
+	cin>>num;
+	for(int i=2;i<num;i++){
+		if(num%i==0){
+			cout<<"non-prime";
+			break;
 		}
-		cout<<j;
+	}
+	if(num==i){
+	cout<<num;
 		
 	}
 	
